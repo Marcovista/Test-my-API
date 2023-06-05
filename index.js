@@ -2,8 +2,8 @@
 document.getElementById("get-activity").addEventListener("click", function () {
 
   // Chiamata API per ottenere un'immagine casuale di un cane
-  fetch("https://dog.ceo/api/breeds/image/random")
-    .then((response) => response.json())
+  fetch("https://dog.ceo/api/breeds/image/random") //chiamata all'endpoint image/random per ottenere un'immagine casuale di un cane
+    .then((response) => response.json()) //stiamo estraendo i dati JSON dalla risposta. Il metodo response.json() converte la risposta HTTP in un oggetto JavaScript utilizzabile.
     .then((data) => {
       // Aggiorna il contenitore dell'immagine con l'immagine ottenuta dalla risposta dell'API
       document.getElementById("image-container").innerHTML = `<img src="${data.message}"/>`;
