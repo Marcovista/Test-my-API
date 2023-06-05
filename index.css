@@ -1,0 +1,48 @@
+.h1 {
+  font-size: 20px;
+}
+#image-container img {
+  height: 200px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+#activity {
+  color: black;
+  font-weight: 300;
+  display: inline;
+}
+#get-activity {
+  cursor: pointer;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background: lightblue;
+  height: 30px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#get-activity:hover {
+  background: grey;
+  color: white;
+}
+
+.box {
+  display: block;
+}
+.box p {
+  margin: 0px 20px 10px;
+  text-transform: capitalize;
+}
+#activity-name {
+  font-weight: bold;
+}
